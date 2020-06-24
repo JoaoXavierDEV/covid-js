@@ -1,0 +1,136 @@
+
+
+/*@media screen and (prefers-color-scheme: dark) {*/
+html{
+    height: 100%;
+    font-family: 'Montserrat';
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #ff0000;
+    --color-text: #333333;
+}
+.navbar{
+      background-color: #3a657e;
+    }
+.navbar-brand{
+      color: aliceblue;
+    }
+
+body{
+     background: var(--bg);
+    /* background: #263238; */
+    color: #cfd8dc;
+    font-family: 'Exo 2', sans-serif;
+
+
+
+
+  
+  }
+.card{
+    background-color: #37474f;
+    border-radius: 0%;
+  }
+.form-control{
+  border-radius: 0%;
+}
+
+  h1 {
+    color: #4a9f7a;
+  }
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: #37474f;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0%;
+}
+.btn{
+  background-color: #3a657e;
+  border-color: #37474f;
+  border-radius: 0%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  transform: scale(0.6);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #4a9f7a;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4a9f7a;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.nice-border{
+ /* border-style: solid;
+  border-color: #2196F3; */
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+
+  padding-top: 6px;
+}
+  }
+
+#mudarTema:checked + .container{
+  --corFundo:#263238;
+}
+
+#mudarTema: + .container{
+  --corFundo: red;
+}

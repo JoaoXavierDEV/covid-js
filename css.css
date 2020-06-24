@@ -1,0 +1,107 @@
+.box-center {
+    /* background-image: linear-gradient(#000000c0, #0000008f) !important;
+  /* align-items: center !important; */
+
+
+    text-transform: uppercase;
+    width: 700px;
+    height: 350px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 40px #000;
+}
+
+.navbar {
+    background-color: rgba(31, 80, 102, 0.603) !important;
+}
+
+.acoes {
+    /*
+  display: ;
+
+  flex-direction: right;
+  justify-content: right;
+  */
+
+}
+
+
+.button {
+    padding: 9px 20px 9px 20px;
+    color: white;
+    border: solid rgb(255, 255, 255);
+    border-width: 0px 0px 2px 0px;
+    border-radius: 0px;
+    background-color: #a3a3a356;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #ad1212ce !important;
+}
+
+.button:focus {
+    background-color: #5512adce !important;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+body,
+.blurred-bg-container .content h1 {
+    margin: 0;
+}
+
+.blurred-bg-container {
+    background-image: url(4k.jpg) !important;
+    margin: 0;
+    height: 100vh;
+    background: #4444444d;
+    // opacity: 50%;
+
+}
+
+.blurred-bg-container .content {
+    background: inherit;
+    width: 60%;
+    /* =cw */
+    height: 40%;
+    /* =ch */
+    border-radius: 8px;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    /* =ct */
+    left: 40%;
+    /* =cl */
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.blurred-bg-container .text {
+
+    background: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    box-sizing: border-box;
+    /* so that padding is included in height */
+}
+
+.blurred-bg-container .blur {
+    background: inherit;
+    height: 100vh;
+    /* h */
+    width: 166.667%;
+    /* (100/cw) x 100% */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-10%,
+            -30%);
+    /* - [cl - (cw/2)] % ,  -[ct - (ch/2)] % */
+    filter: blur(20px);
+    z-index: -1;
+}
