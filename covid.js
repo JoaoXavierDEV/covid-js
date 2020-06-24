@@ -53,14 +53,14 @@ async function agrVai(){
         var horaTotal = horaNew.split('-',3)
 
         profile.innerHTML = `
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 mb-3">
                 <div class="card" style="width: 18rekm;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Estado: <span class="badge badge-success">${estado.state}</span></li>
                         <li class="list-group-item">Casos: <span class="badge badge-primary">${estado.cases}</span></li>
                         <li class="list-group-item">Suspeitos: <span class="badge badge-warning">${estado.suspects}</span></li>
                         <li class="list-group-item">Mortes: <span class="badge badge-danger">${estado.deaths}</span></li>
-                        <li class="list-group-item">Ultima atualização: ${horaTotal[2]}/${horaTotal[1]}/${horaTotal[0]} </li>
+                        <li class="list-group-item">Última atualização: ${horaTotal[2]}/${horaTotal[1]}/${horaTotal[0]} </li>
                     </ul>     
                     <div class="card-body">
                         <a href="" target="_blank" class="btn btn-primary btn-block">Ver mais</a>
@@ -78,14 +78,14 @@ async function agrVai(){
         var horaTotal = horaNew.split('-',3)
 
         profile.innerHTML += `      
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
                 <div class="card" style="width: 18rekm;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">País: <span class="badge badge-success">${brasilRes.country}</span></li>
                         <li class="list-group-item">Casos: <span class="badge badge-primary">${brasilRes.cases}</span></li>
                         <li class="list-group-item">Confirmados: <span class="badge badge-warning">${brasilRes.confirmed}</span></li>
                         <li class="list-group-item">Mortes: <span class="badge badge-danger">${brasilRes.deaths}</span></li>
-                        <li class="list-group-item">Ultima atualização: ${horaTotal[2]}/${horaTotal[1]}/${horaTotal[0]} </li>
+                        <li class="list-group-item">Última atualização: ${horaTotal[2]}/${horaTotal[1]}/${horaTotal[0]} </li>
                     </ul>     
                     <div class="card-body">
                         <a href="" target="_blank" class="btn btn-primary btn-block">Ver mais</a>
