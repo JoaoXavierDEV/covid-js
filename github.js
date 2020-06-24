@@ -1,5 +1,5 @@
 
-repos.innerHTML = `<img src="https://images.uncyc.org/pt/9/9a/Warmachine-win1.gif"/>`;
+repos.innerHTML = `<div class="text-center" style="text-align: center;"><img src="https://images.uncyc.org/pt/9/9a/Warmachine-win1.gif"/></div>`;
 
 setTimeout(function(){
     const search = document.getElementById("search");

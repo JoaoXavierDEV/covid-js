@@ -18,7 +18,7 @@ const initialColors = {
 const darkMode = {
     bg: "#263238",
     bgPanel: "#434343",
-    colorHeadings: "#3664FF",
+    colorHeadings: "#4a9f7a",
     colorText: "#B5B5B5"
 } 
 
@@ -34,6 +34,43 @@ const changeColors = (colors) => {
 
 
 checkbox.addEventListener("change", ({target}) => {
-    target.checked ? changeColors(darkMode) : changeColors(initialColors)
-    console.log(checkbox.value)
-})
+   // target.checked ? changeColors(darkMode) : changeColors(initialColors);
+
+    if(checkbox.checked == true){
+        var tema = "darkMode";
+        localStorage.setItem("temaAtual", tema);
+        changeColors(darkMode);
+        // console.log("true");
+
+            } else if(checkbox.checked == false){
+                var tema = "initialColors";
+                localStorage.setItem("temaAtual", tema);
+                changeColors(initialColors);
+                // console.log("false");
+                    } else {
+                        console.log("analise");
+            }
+        }
+    
+)
+
+
+function getTema(){
+    
+    var temaAtual = localStorage.getItem("temaAtual");
+
+    if(temaAtual == "darkMode"){
+        
+        document.getElementById("mudarTema").checked = true; 
+        console.log("tema salvo carregado");
+        changeColors(darkMode);
+        
+        
+    } else if(temaAtual == "initialColors") {
+        document.getElementById("mudarTema").checked = false; 
+        console.log("tema padrão do sistema");
+        changeColors(initialColors);
+        
+    }
+}
+

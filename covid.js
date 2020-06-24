@@ -1,12 +1,14 @@
 
-profile.innerHTML = `<div class="justify-content-center" style="
-  margin: 55px;
-  // border: 3px solid #73AD21;
+profile.innerHTML = `
+<div class="col-12">
+<div class="justify-content-center" style="
+   margin: 20px;
+// border: 3px solid #73AD21;
    padding: 10px;
-  text-align: center;
+  text-align: center; ">
   
-
-"><img style="transform: scale(1.1);" src="https://images.uncyc.org/pt/9/9a/Warmachine-win1.gif"/>
+  <img style="transform: scale(1.2);" src="https://images.uncyc.org/pt/9/9a/Warmachine-win1.gif"/>
+</div>
 </div>`;
     /*
 async function agrVai(){
@@ -109,6 +111,4 @@ async function agrVai(){
         
     });
 })();
-
-
 
