@@ -1,57 +1,63 @@
-
-
 /*@media screen and (prefers-color-scheme: dark) {*/
-html{
-    height: 100%;
-    font-family: 'Montserrat';
-    --bg: #FCFCFC;
-    --bg-panel: #EBEBEB;
-    --color-headings: #ff0000;
-    --color-text: #4a9f7a;
+html {
+  height: 100%;
+  font-family: 'Montserrat';
+  --bg: #FCFCFC;
+  --bg-panel: #EBEBEB;
+  --color-headings: #ff0000;
+  --color-text: #4a9f7a;
 }
-.navbar{
-      background-color: #3a657e;
-    }
-.navbar-brand{
-      color: aliceblue;
-    }
 
-body{
-     background: var(--bg);
-    color: #cfd8dc;
-    font-family: 'Exo 2', sans-serif;
+.navbar {
+  background-color: #3a657e;
+}
+
+.navbar-brand {
+  color: aliceblue;
+}
+
+body {
+  background: var(--bg);
+  color: #cfd8dc;
+  font-family: 'Exo 2', sans-serif;
 
 
 
 
-  
-  }
-.card{
-    background-color: var(--bg-panel);
-    border-radius: 0%;
-  }
-.form-control{
+
+}
+
+.card {
+  background-color: var(--bg-panel);
   border-radius: 0%;
 }
 
-  h1, p, small{
-    color: #4a9f7a;
-  }
+.form-control {
+  border-radius: 0%;
+}
+
+h1,
+p,
+small {
+  color: #4a9f7a;
+}
 
 .list-group-item {
-    position: relative;
-    display: block;
-    padding: .75rem 1.25rem;
-    background-color: var(--bg-panel);
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 0%;
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  background-color: var(--bg-panel);
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 0%;
 }
-.btn{
+
+.btn {
   background-color: #3a657e;
   border-color: #37474f;
   border-radius: 0%;
 }
-li{
+
+li {
   color: var(--color-text);
 }
 
@@ -96,15 +102,15 @@ li{
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #4a9f7a;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #4a9f7a;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -119,14 +125,11 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.nice-border{
- /* border-style: solid;
+.nice-border {
+  /* border-style: solid;
   border-color: #2196F3; */
   font-family: 'Exo 2', sans-serif;
   font-weight: 700;
 
   padding-top: 6px;
 }
-  
-
-

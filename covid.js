@@ -10,18 +10,7 @@ profile.innerHTML = `
   <img style="transform: scale(1.2);" src="https://images.uncyc.org/pt/9/9a/Warmachine-win1.gif"/>
 </div>
 </div>`;
-    /*
-async function agrVai(){
 
-    const dadosBrasill = await fetch(`https://covid19-brazil-api.now.sh/api/report/v1/brazil`);
-    const brasilRess = await dadosBrasill.json();
-
-
-    console.log(brasilRess.data);
-    console.log(brasilRess.data.cases);
-
-}
-*/
 
 (function(){
 
@@ -95,7 +84,7 @@ async function agrVai(){
     };
         
     /*
-    search.addEventListener("change", (e) => {
+    search.addEventListener("keyup", (e) => {
         if(busca.length > 0){
             getEstados(busca).then(res => {
                 profile.innerHTML = '';
@@ -106,7 +95,7 @@ async function agrVai(){
             console.log("else");
         }
        
-    }); */
+    }); método para ouvir o campo, tecla */
 
     search.addEventListener("change", exibeEstado);
 
