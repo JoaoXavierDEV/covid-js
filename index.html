@@ -13,6 +13,7 @@
 <style>
 
 </style>
+
 <script>
   
 </script>
@@ -32,19 +33,20 @@
   </nav>
   <div class="container">
     <div class="card card-body text-center">
-      <h1>Pesquisar por estado:</h1>
-      <p class="lead">Digite essa merda ae</p>
-      <small class="mb-3">Exemplo: RJ, SP, MG</small>
-      <input id="search" type="text" class="form-control">
+      <h1 class="mb-4">Pesquisar por estado:</h1>
+     
+      
+      <!--<input id="search" type="text" class="form-control">-->
+      <select id="search" type="text" class="custom-select">
+        <option value="selecione seu estado">Selecione seu estado...</option> 
+        <option value="rj">Rio de Janeiro</option> 
+        <option value="sp">São Paulo</option>
+        <option value="mg">Minas Gerais</option>
+      </select>
     </div>
   </div>
     <div class="container">
       <div class="row mt-3 mb-3 text-center" id="profile"></div>
-      
-     
-    </div>
-  
-
 </body>
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -54,4 +56,5 @@
   <script src="github.js"></script>-->
   <script src="covid.js"></script>
   <script src="darkmode.js"></script>
+  <script src="testes.js"></script>
 </html>

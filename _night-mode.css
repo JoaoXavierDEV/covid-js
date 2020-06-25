@@ -127,14 +127,6 @@ input:checked + .slider:before {
 
   padding-top: 6px;
 }
-  }
+  
 
 
-
-
-@media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
-
-    }

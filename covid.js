@@ -94,12 +94,9 @@ async function agrVai(){
             </div>`
     };
         
-    
-    search.addEventListener("keyup", (e) => {
-        const busca = e.target.value;
-
-        
-        if(busca.length > 1){
+    /*
+    search.addEventListener("change", (e) => {
+        if(busca.length > 0){
             getEstados(busca).then(res => {
                 profile.innerHTML = '';
                 showProfile(res.estadoRes);
@@ -108,7 +105,17 @@ async function agrVai(){
         } else if (busca.length = 0){
             console.log("else");
         }
-        
-    });
+       
+    }); */
+
+    search.addEventListener("change", exibeEstado);
+
+    function exibeEstado(){
+         getEstados(search.value).then(res => {
+                profile.innerHTML = '';
+                showProfile(res.estadoRes);
+                showRepos(res.brasilRes);
+            });        
+    }
 })();
 
